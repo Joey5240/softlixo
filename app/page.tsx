@@ -210,47 +210,96 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bento-grid">
-          <Link href="/reviews" className="bento-card bento-large">
-            <span className="bento-number">01</span>
-            <div className="tag">Reviews</div>
-            <h3>Should you actually pay for it?</h3>
-            <p>
-              Practical reviews focused on trade-offs, usability and buying
-              decisions.
-            </p>
-            <span className="bento-arrow">↗</span>
-          </Link>
+        <div className="showcase-grid">
 
-          <div className="bento-card bento-tall">
-            <span className="bento-number">02</span>
-            <div className="tag">Comparisons</div>
-            <h3>Which tool wins for your use case?</h3>
-            <div className="compare-lines">
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
+  <Link href="/reviews" className="showcase-card">
+    <div className="showcase-top">
+      <span className="showcase-tag">REVIEWS</span>
+      <span className="showcase-number">01</span>
+    </div>
 
-          <Link href="/categories" className="bento-card bento-wide">
-            <span className="bento-number">03</span>
-            <div className="tag">Categories</div>
-            <h3>Explore software by what you need to get done.</h3>
-            <span className="bento-arrow">↗</span>
-          </Link>
+    <div className="showcase-content">
+      <h3>Should you actually pay for it?</h3>
+      <p>
+        Practical reviews focused on trade-offs, usability and buying decisions.
+      </p>
+    </div>
 
-          <div className="bento-card bento-glow">
-            <span className="bento-number">04</span>
-            <div className="tag">Editorial</div>
-            <h3>Useful before impressive.</h3>
-            <p>
-              We would rather explain why a product is not for you than force a
-              recommendation.
-            </p>
-          </div>
-        </div>
+    <div className="showcase-footer">
+      <span>Explore reviews</span>
+      <span className="showcase-arrow">↗</span>
+    </div>
+  </Link>
+
+
+  <Link href="/reviews" className="showcase-card">
+    <div className="showcase-top">
+      <span className="showcase-tag">COMPARISONS</span>
+      <span className="showcase-number">02</span>
+    </div>
+
+    <div className="showcase-content">
+      <h3>Which tool wins for your use case?</h3>
+      <p>
+        Side-by-side comparisons built around real buying decisions.
+      </p>
+    </div>
+
+    <div className="showcase-visual">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div className="showcase-footer">
+      <span>Compare tools</span>
+      <span className="showcase-arrow">↗</span>
+    </div>
+  </Link>
+
+
+  <Link href="/categories" className="showcase-card">
+    <div className="showcase-top">
+      <span className="showcase-tag">CATEGORIES</span>
+      <span className="showcase-number">03</span>
+    </div>
+
+    <div className="showcase-content">
+      <h3>Explore software by what you need to get done.</h3>
+      <p>
+        Browse focused software categories without wasting time.
+      </p>
+    </div>
+
+    <div className="showcase-footer">
+      <span>Browse categories</span>
+      <span className="showcase-arrow">↗</span>
+    </div>
+  </Link>
+
+
+  <Link href="/about" className="showcase-card showcase-featured">
+    <div className="showcase-top">
+      <span className="showcase-tag">EDITORIAL</span>
+      <span className="showcase-number">04</span>
+    </div>
+
+    <div className="showcase-content">
+      <h3>Useful before impressive.</h3>
+      <p>
+        We would rather explain why a product is not for you than force a recommendation.
+      </p>
+    </div>
+
+    <div className="showcase-orbit"></div>
+
+    <div className="showcase-footer">
+      <span>Our approach</span>
+      <span className="showcase-arrow">↗</span>
+    </div>
+  </Link>
+
+</div>
       </section>
 
       <section className="categories-universe">
