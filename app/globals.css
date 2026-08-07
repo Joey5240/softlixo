@@ -4519,3 +4519,409 @@ footer {
     animation: none !important;
   }
 }
+/* =========================================================
+   SOFTLIXO — MOBILE POLISH V1
+   iPhone / small screen optimization
+========================================================= */
+
+@media (max-width: 760px) {
+
+  /* ---------- HARD STOP HORIZONTAL OVERFLOW ---------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .ultimate-home,
+  .ultimate-hero,
+  .marquee-section,
+  .ultimate-featured,
+  .manifesto-section,
+  .bento-section,
+  .categories-universe,
+  .method-section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* ---------- MOBILE HEADER ---------- */
+
+  header {
+    position: relative;
+  }
+
+  header .nav {
+    width: calc(100% - 40px);
+    min-height: auto;
+
+    margin: 0 auto;
+    padding: 28px 0 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 26px 28px;
+  }
+
+  header .brand {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  header nav {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  header nav a {
+    margin: 0 !important;
+
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .ultimate-hero {
+    min-height: 0 !important;
+  }
+
+  .ultimate-hero-inner {
+    width: calc(100% - 40px) !important;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .ultimate-hero-copy {
+    width: 100%;
+    padding: 86px 0 30px;
+  }
+
+  .ultimate-hero-copy h1 {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: clamp(54px, 14.8vw, 78px);
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+
+    overflow-wrap: break-word;
+  }
+
+  .ultimate-lead {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .button {
+    max-width: 100%;
+  }
+
+
+  /* ---------- HERO PROOF ---------- */
+
+  .hero-proof-row {
+    margin-top: 38px;
+  }
+
+  .hero-proof-row > div {
+    padding: 22px 0;
+  }
+
+
+  /* ---------- SOFTWARE UNIVERSE ---------- */
+
+  .software-universe {
+    width: 430px !important;
+    max-width: 92vw;
+
+    margin: 25px auto 15px;
+
+    transform: none !important;
+  }
+
+  .universe-core {
+    width: 185px;
+    height: 185px;
+  }
+
+  .universe-core strong {
+    font-size: 19px;
+  }
+
+  .floating-chip {
+    min-width: 98px;
+    padding: 11px 13px;
+  }
+
+  .floating-chip strong {
+    font-size: 12px;
+  }
+
+
+  /* ---------- MARQUEE ---------- */
+
+  .marquee-section {
+    width: 100% !important;
+  }
+
+  .marquee-item {
+    min-height: 72px;
+    padding: 0 24px;
+
+    font-size: 12px;
+  }
+
+
+  /* ---------- SECTION HEADINGS ---------- */
+
+  .ultimate-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .ultimate-section-heading h2 {
+    max-width: 100%;
+
+    font-size: clamp(43px, 11vw, 58px);
+    line-height: 1;
+  }
+
+
+  /* ---------- FEATURED REVIEW ---------- */
+
+  .ultimate-featured {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+
+  .ultimate-feature-card {
+    min-height: 0;
+    border-radius: 26px;
+  }
+
+  .feature-copy {
+    padding: 34px 30px;
+  }
+
+  .feature-copy h3 {
+    font-size: clamp(46px, 13vw, 66px);
+    line-height: 0.98;
+  }
+
+  .feature-copy > p {
+    font-size: 16px;
+    line-height: 1.68;
+  }
+
+  .feature-facts {
+    margin-top: 34px;
+  }
+
+  .feature-facts > div {
+    padding: 18px 0;
+  }
+
+  .feature-visual {
+    min-height: 390px;
+  }
+
+  .feature-glass-main {
+    width: calc(100% - 80px);
+    left: 40px;
+    top: 85px;
+
+    padding: 23px;
+  }
+
+  .feature-glass-main strong {
+    font-size: 22px;
+  }
+
+  .feature-glass-mini {
+    right: 35px;
+    bottom: 65px;
+  }
+
+
+  /* ---------- MANIFESTO ---------- */
+
+  .manifesto-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .manifesto-section h2 {
+    font-size: clamp(47px, 12.5vw, 66px);
+    line-height: 0.98;
+  }
+
+
+  /* ---------- SHOWCASE GRID ---------- */
+
+  .showcase-grid {
+    gap: 16px;
+  }
+
+  .showcase-card {
+    min-height: 0;
+    padding: 28px;
+  }
+
+  .showcase-content {
+    margin-top: 42px;
+  }
+
+  .showcase-content h3 {
+    font-size: clamp(35px, 9.5vw, 47px);
+    line-height: 1.03;
+  }
+
+  .showcase-content p {
+    font-size: 15px;
+  }
+
+  .showcase-footer {
+    margin-top: 54px;
+  }
+
+  .showcase-visual {
+    margin-top: 34px;
+  }
+
+
+  /* ---------- WHAT WE COVER ---------- */
+
+  .categories-universe {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .ultimate-category-grid {
+    gap: 13px;
+  }
+
+  .ultimate-category-card {
+    min-height: 0;
+
+    padding: 26px 55px 26px 78px;
+
+    border-radius: 20px;
+  }
+
+  .ultimate-category-card h3 {
+    font-size: 21px;
+  }
+
+  .ultimate-category-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .category-index {
+    left: 24px;
+    font-size: 24px;
+  }
+
+  .category-arrow {
+    right: 22px;
+  }
+
+
+  /* ---------- HOW WE REVIEW ---------- */
+
+  .method-section {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .method-heading {
+    margin-bottom: 52px;
+  }
+
+  .method-heading h2 {
+    font-size: clamp(44px, 11.5vw, 60px);
+  }
+
+  .method-grid {
+    gap: 0;
+  }
+
+  .method-step {
+    padding: 0 0 45px !important;
+  }
+
+  .method-step > span {
+    margin-bottom: 20px;
+  }
+
+  .method-step strong {
+    font-size: 22px;
+  }
+
+  .method-step p {
+    max-width: 100%;
+
+    margin-top: 10px;
+
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- FINAL CTA ---------- */
+
+  .ultimate-cta {
+    width: calc(100% - 40px);
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    padding: 52px 38px;
+
+    border-radius: 28px;
+  }
+
+  .ultimate-cta h2 {
+    font-size: clamp(49px, 13vw, 67px);
+  }
+
+  .ultimate-cta p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer .footer-inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+    padding-top: 42px;
+    padding-bottom: 46px;
+  }
+
+  footer .footer-inner nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 24px;
+  }
+}
