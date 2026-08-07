@@ -3978,3 +3978,137 @@ footer {
 .bento-wide::before {
   margin: 0 !important;
 }
+/* =========================================================
+   FINAL BENTO ALIGNMENT FIX
+   Equal cards + aligned typography
+========================================================= */
+
+.bento-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: repeat(2, 330px) !important;
+  gap: 18px !important;
+}
+
+/* Reset all four cards */
+.bento-large,
+.bento-tall,
+.bento-wide,
+.bento-glow {
+  grid-column: auto !important;
+  grid-row: auto !important;
+
+  min-height: 330px !important;
+  height: 330px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+
+  padding: 30px !important;
+}
+
+/* Same header/tag alignment */
+.bento-card .tag {
+  align-self: flex-start;
+  margin: 0 !important;
+}
+
+/* Same title position and typography */
+.bento-large h3,
+.bento-tall h3,
+.bento-wide h3,
+.bento-glow h3 {
+  max-width: 560px !important;
+
+  margin: 34px 0 0 !important;
+
+  font-size: clamp(28px, 2.7vw, 44px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.045em !important;
+}
+
+/* Same description styling */
+.bento-large p,
+.bento-tall p,
+.bento-wide p,
+.bento-glow p {
+  margin: 16px 0 0 !important;
+
+  max-width: 560px !important;
+
+  color: #9eafc3 !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+/* Same number positioning */
+.bento-number {
+  top: 28px !important;
+  right: 28px !important;
+
+  font-size: 30px !important;
+}
+
+/* Remove the old Categories bottom text */
+.bento-wide::before {
+  content: none !important;
+}
+
+/* Remove the fake Reviews mini box */
+.bento-large::before {
+  content: none !important;
+}
+
+/* Keep normal glow layer */
+.bento-large::after {
+  opacity: 0 !important;
+}
+
+.bento-large:hover::after {
+  opacity: 1 !important;
+}
+
+/* Align arrows consistently */
+.bento-large .bento-arrow,
+.bento-wide .bento-arrow {
+  left: auto !important;
+  right: 30px !important;
+  bottom: 26px !important;
+}
+
+/* Comparison bars sit consistently at the bottom */
+.compare-lines {
+  left: 30px !important;
+  right: 30px !important;
+  bottom: 30px !important;
+}
+
+/* Editorial orb stays inside the card */
+.bento-glow::before {
+  right: -45px !important;
+  bottom: -55px !important;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .bento-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: none !important;
+  }
+
+  .bento-large,
+  .bento-tall,
+  .bento-wide,
+  .bento-glow {
+    height: auto !important;
+    min-height: 300px !important;
+  }
+
+  .bento-large h3,
+  .bento-tall h3,
+  .bento-wide h3,
+  .bento-glow h3 {
+    font-size: clamp(30px, 9vw, 42px) !important;
+  }
+}
