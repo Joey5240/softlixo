@@ -3928,3 +3928,30 @@ footer {
     height: 80px;
   }
 }
+/* =========================================================
+   FIX CATEGORIES BENTO CARD TYPOGRAPHY
+========================================================= */
+
+.bento-wide {
+  justify-content: flex-start;
+}
+
+.bento-wide h3 {
+  max-width: 620px;
+  margin-top: 26px;
+
+  font-size: clamp(28px, 2.65vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.bento-wide::before {
+  left: 32px;
+  bottom: 30px;
+}
+
+.bento-wide .bento-arrow {
+  left: auto;
+  right: 30px;
+  bottom: 28px;
+}
