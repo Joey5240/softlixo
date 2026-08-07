@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,30 +20,55 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>
-        <header className="header">
-          <nav className="container nav">
-            <Link className="brand" href="/">soft<span>lixo</span></Link>
-            <div className="links">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WDD0NJ51SL"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WDD0NJ51SL');
+          `}
+        </Script>
+
+        <header>
+          <div className="nav">
+            <Link href="/" className="brand">
+              softlixo
+            </Link>
+
+            <nav>
               <Link href="/reviews">Reviews</Link>
               <Link href="/categories">Categories</Link>
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </header>
-        {children}
-        <footer className="footer">
-          <div className="container footer-row">
-            <div>© {new Date().getFullYear()} Softlixo</div>
-            <div className="footer-links">
+
+        <main>{children}</main>
+
+        <footer>
+          <div className="footer-inner">
+            <p>© {new Date().getFullYear()} Softlixo</p>
+
+            <nav>
               <Link href="/privacy">Privacy</Link>
               <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
               <Link href="/contact">Contact</Link>
-            </div>
+            </nav>
           </div>
         </footer>
       </body>
