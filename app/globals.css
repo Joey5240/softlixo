@@ -4925,3 +4925,12 @@ footer {
     gap: 20px 24px;
   }
 }
+@media (max-width: 760px) {
+  .chip-seo {
+    right: 4%;
+  }
+
+  .chip-security {
+    left: 4%;
+  }
+}
