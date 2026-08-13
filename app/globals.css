@@ -992,9 +992,7 @@ footer {
 
   .hero,
   article,
-  .container,
-  main > section,
-  main > div {
+  .container {
     width: min(100% - 30px, var(--max));
   }
 
@@ -4932,5 +4930,36 @@ footer {
 
   .chip-security {
     left: 4%;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE HERO SAFETY PATCH
+   Keeps decorative hero elements inside the phone viewport
+   without shrinking the page sections.
+========================================================= */
+@media (max-width: 760px) {
+  .ultimate-hero {
+    width: 100%;
+  }
+
+  .ultimate-hero-inner {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .software-universe {
+    width: min(430px, calc(100vw - 40px)) !important;
+    max-width: calc(100vw - 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .chip-seo {
+    right: 4% !important;
+  }
+
+  .chip-security {
+    left: 4% !important;
   }
 }
