@@ -2,197 +2,675 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Writesonic Review 2026: Features, Pros, Cons & Is It Worth It?",
+  title: "Writesonic Review 2026: Features, Pricing, Pros & Cons",
   description:
-    "Our Writesonic review covers its AI writing features, SEO tools, advantages, disadvantages, pricing considerations, and who it is best suited for in 2026.",
+    "Independent Writesonic review for 2026 covering AI search visibility, SEO, content creation, pricing, strengths, limitations and who it is best suited for.",
   alternates: {
     canonical: "/reviews/writesonic-review",
   },
   openGraph: {
     title: "Writesonic Review 2026: Is It Worth It?",
     description:
-      "A practical look at Writesonic's AI writing and SEO features, pros, cons, and who should consider using it.",
+      "An independent breakdown of Writesonic's AI search, SEO and content platform.",
     url: "https://softlixo.com/reviews/writesonic-review",
     type: "article",
   },
 };
 
+const pros = [
+  "Combines AI search visibility, SEO and content workflows in one platform.",
+  "Built around both traditional search and emerging AI search channels.",
+  "AI Article Writer includes research and citation-oriented workflows.",
+  "Useful for teams that publish and optimize content regularly.",
+  "Broader marketing workflow than a basic AI writing assistant.",
+];
+
+const cons = [
+  "The broader platform may be excessive for occasional writing tasks.",
+  "Pricing is aimed more at serious marketers and teams than casual users.",
+  "The number of tools can create a learning curve for new users.",
+  "Value depends heavily on whether you will actually use the SEO and AI visibility features.",
+];
+
+const features = [
+  {
+    number: "01",
+    title: "AI Visibility Tracking",
+    text:
+      "Writesonic is increasingly built around helping brands understand how they appear across AI-powered search experiences, including visibility, citations and brand presence.",
+  },
+  {
+    number: "02",
+    title: "SEO AI Agent",
+    text:
+      "The SEO AI Agent is designed to help research search results, analyze competing content and turn SEO analysis into actionable recommendations.",
+  },
+  {
+    number: "03",
+    title: "AI Article Writer",
+    text:
+      "Writesonic's article workflow combines research, content creation and optimization rather than functioning as a simple one-prompt text generator.",
+  },
+  {
+    number: "04",
+    title: "SEO + GEO Workflows",
+    text:
+      "The platform increasingly connects traditional Google-focused SEO with generative engine optimization for AI search.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Is Writesonic still mainly an AI writing tool?",
+    answer:
+      "Not really. Writing remains part of the platform, but Writesonic now places much more emphasis on AI search visibility, GEO, SEO workflows and content execution.",
+  },
+  {
+    question: "How much does Writesonic cost?",
+    answer:
+      "Writesonic currently lists its Starter plan at $99 per month, or $79 per month when billed annually. Pricing and plan limits can change, so always verify the current official pricing before subscribing.",
+  },
+  {
+    question: "Who is Writesonic best for?",
+    answer:
+      "It makes the most sense for marketers, SEO teams, agencies and businesses that regularly create and optimize content and also care about visibility across both Google and AI search.",
+  },
+  {
+    question: "Is Writesonic worth it for casual AI writing?",
+    answer:
+      "Probably not for everyone. If you only need occasional rewriting, brainstorming or short-form AI text, a simpler tool may provide better value.",
+  },
+];
+
 export default function WritesonicReview() {
   return (
-    <article>
-      <p>
-        <Link href="/reviews">← Back to Reviews</Link>
-      </p>
+    <main className="review-detail-page">
 
-      <p>AI Writing & SEO</p>
+      {/* =========================
+          REVIEW HERO
+      ========================== */}
 
-      <h1>Writesonic Review 2026: Is It Worth It?</h1>
+      <section className="review-detail-hero">
+        <div className="review-detail-hero-glow" />
 
-      <p>
-        Writesonic is an AI-powered content and marketing platform designed to
-        help users research, create, optimize, and improve online content.
-        Instead of focusing only on basic AI text generation, the platform also
-        includes tools aimed at SEO, content workflows, and AI search
-        visibility.
-      </p>
+        <div className="review-detail-container">
+          <Link href="/reviews" className="review-back-link">
+            ← Back to reviews
+          </Link>
 
-      <p>
-        In this review, we look at what Writesonic offers, where it may be
-        useful, its main limitations, and who should consider it.
-      </p>
+          <div className="review-detail-label-row">
+            <span className="review-pill">AI SEARCH · SEO · CONTENT</span>
+            <span className="review-updated">Updated August 2026</span>
+          </div>
 
-      <hr />
+          <h1>
+            Writesonic Review 2026:
+            <span> Is It Worth Paying For?</span>
+          </h1>
 
-      <h2>Quick Verdict</h2>
+          <p className="review-detail-intro">
+            Writesonic is no longer just another AI writing tool. Its current
+            platform combines AI search visibility, SEO workflows and
+            AI-assisted content creation.
+          </p>
 
-      <p>
-        <strong>Best for:</strong> Content marketers, bloggers, SEO teams,
-        agencies, and businesses that want AI-assisted content creation and
-        optimization in one platform.
-      </p>
+          <p className="review-detail-intro review-detail-intro-secondary">
+            This Softlixo review focuses on what the platform actually offers,
+            where the value is, where it may be excessive, and who should
+            seriously consider paying for it.
+          </p>
 
-      <p>
-        <strong>Main advantage:</strong> Writesonic combines AI writing with
-        marketing and SEO-oriented tools rather than functioning only as a
-        general-purpose AI writer.
-      </p>
+          <div className="review-hero-meta">
+            <div>
+              <span>SOFTLIXO SCORE</span>
+              <strong>4.3 / 5</strong>
+            </div>
 
-      <p>
-        <strong>Main drawback:</strong> Users who only need occasional basic
-        writing assistance may not need the broader feature set.
-      </p>
+            <div>
+              <span>BEST FOR</span>
+              <strong>Marketing & SEO teams</strong>
+            </div>
 
-      <hr />
+            <div>
+              <span>FOCUS</span>
+              <strong>AI Search + SEO + Content</strong>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2>What Is Writesonic?</h2>
 
-      <p>
-        Writesonic is a software platform built around AI-assisted content
-        creation and digital marketing workflows. Its tools are intended to
-        help users move from research and drafting to optimization and
-        publishing more efficiently.
-      </p>
+      {/* =========================
+          QUICK VERDICT
+      ========================== */}
 
-      <p>
-        The platform has expanded beyond simple article generation and now
-        targets use cases including content creation, SEO workflows, and
-        visibility across traditional and AI-powered search experiences.
-      </p>
+      <section className="review-content-section">
+        <div className="review-article-container">
 
-      <h2>Key Writesonic Features</h2>
+          <div className="review-section-kicker">
+            01 · QUICK VERDICT
+          </div>
 
-      <h3>1. AI Article Writing</h3>
+          <div className="verdict-panel">
+            <div className="verdict-score">
+              <span>SOFTLIXO</span>
+              <strong>4.3</strong>
+              <small>/ 5</small>
+            </div>
 
-      <p>
-        Writesonic provides AI-assisted article creation tools designed for
-        producing long-form content. These can help speed up research,
-        outlining, drafting, and editing.
-      </p>
+            <div className="verdict-copy">
+              <h2>
+                Strong for serious content teams.
+                <span> Overkill for casual users.</span>
+              </h2>
 
-      <h3>2. SEO-Focused Workflows</h3>
+              <p>
+                Writesonic makes the strongest case when you need more than
+                basic AI-generated text. Its combination of AI visibility,
+                SEO and content workflows gives marketing teams a broader
+                system for research, optimization and publishing.
+              </p>
 
-      <p>
-        The platform includes features intended to help marketers create and
-        optimize content around search intent and organic visibility.
-      </p>
+              <p>
+                The trade-off is straightforward: if you only want an AI
+                assistant to occasionally rewrite an email or draft a short
+                post, you may be paying for capabilities you never use.
+              </p>
+            </div>
+          </div>
 
-      <h3>3. AI Search Visibility Tools</h3>
+        </div>
+      </section>
 
-      <p>
-        Writesonic has also expanded into tools focused on understanding how
-        brands appear in AI-powered search and answer engines. This can be
-        useful for businesses paying attention to the growing importance of AI
-        discovery alongside traditional search.
-      </p>
 
-      <h3>4. Content Optimization</h3>
+      {/* =========================
+          PROS & CONS
+      ========================== */}
 
-      <p>
-        Users can use AI throughout different stages of the content workflow
-        rather than relying on a separate tool for every task.
-      </p>
+      <section className="review-content-section">
+        <div className="review-article-container">
 
-      <h2>Writesonic Pros and Cons</h2>
+          <div className="review-section-kicker">
+            02 · PROS & CONS
+          </div>
 
-      <h3>Pros</h3>
+          <h2 className="review-section-title">
+            What stands out.
+            <span> What does not.</span>
+          </h2>
 
-      <ul>
-        <li>Combines multiple content and marketing tools in one platform.</li>
-        <li>Useful for long-form content workflows.</li>
-        <li>Includes SEO-oriented functionality.</li>
-        <li>Targets both traditional search and emerging AI search use cases.</li>
-        <li>Can reduce time spent on repetitive content tasks.</li>
-      </ul>
+          <div className="pros-cons-grid">
 
-      <h3>Cons</h3>
+            <div className="pros-cons-card pros-card">
+              <span className="pros-cons-label">PROS</span>
 
-      <ul>
-        <li>The number of features may feel excessive for casual users.</li>
-        <li>AI-generated content still requires human review and fact-checking.</li>
-        <li>Value depends heavily on how often you create or optimize content.</li>
-        <li>Subscription features and limits can change over time.</li>
-      </ul>
+              <div className="pros-cons-list">
+                {pros.map((item) => (
+                  <div key={item} className="pros-cons-item">
+                    <span className="pros-icon">+</span>
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-      <h2>Who Is Writesonic Best For?</h2>
+            <div className="pros-cons-card cons-card">
+              <span className="pros-cons-label">CONS</span>
 
-      <p>Writesonic may be a good fit for:</p>
+              <div className="pros-cons-list">
+                {cons.map((item) => (
+                  <div key={item} className="pros-cons-item">
+                    <span className="cons-icon">−</span>
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-      <ul>
-        <li>Bloggers publishing content regularly.</li>
-        <li>SEO professionals.</li>
-        <li>Content marketing teams.</li>
-        <li>Agencies managing multiple content projects.</li>
-        <li>Businesses investing in organic and AI-search visibility.</li>
-      </ul>
+          </div>
 
-      <p>
-        If you only need AI for occasional emails, short social posts, or
-        simple rewriting, a more basic AI assistant may be sufficient.
-      </p>
+        </div>
+      </section>
 
-      <h2>Is Writesonic Worth It?</h2>
 
-      <p>
-        Writesonic makes the most sense when AI is part of a repeatable content
-        or marketing workflow. The value is less about generating a single
-        article and more about bringing research, writing, optimization, and
-        related marketing tasks into one system.
-      </p>
+      {/* =========================
+          WHAT IT IS
+      ========================== */}
 
-      <p>
-        For frequent publishers and marketers, that consolidation can be
-        valuable. For occasional users, the decision depends on whether the
-        additional SEO and marketing features will actually be used.
-      </p>
+      <section className="review-content-section">
+        <div className="review-article-container">
 
-      <h2>Final Verdict</h2>
+          <div className="review-section-kicker">
+            03 · WHAT WRITESONIC IS
+          </div>
 
-      <p>
-        Writesonic is worth considering for marketers and businesses looking
-        for more than a basic AI writing tool. Its broader focus on content,
-        SEO, and AI-search visibility makes it particularly relevant for users
-        who depend on content as a growth channel.
-      </p>
+          <h2 className="review-section-title">
+            More than an
+            <span> AI writer.</span>
+          </h2>
 
-      <p>
-        We recommend comparing the current features and pricing with your
-        actual publishing needs before choosing a paid plan.
-      </p>
+          <div className="review-reading-copy">
+            <p>
+              Writesonic originally became known for AI-assisted writing, but
+              its product direction has expanded substantially.
+            </p>
 
-      <hr />
+            <p>
+              The current platform sits at the intersection of three areas:
+              creating content, improving traditional SEO performance, and
+              understanding how brands appear inside AI-powered search
+              experiences.
+            </p>
 
-      <p>
-        <strong>Affiliate disclosure:</strong> Softlixo may receive a commission
-        from some products mentioned on this website if you purchase through
-        our links, at no additional cost to you. Our editorial opinions are
-        independent.
-      </p>
+            <p>
+              That distinction matters when comparing Writesonic with simple
+              chatbot-style writing tools. The value proposition is no longer
+              merely &quot;generate text faster.&quot; It is closer to
+              &quot;research, create, optimize and monitor content from one
+              system.&quot;
+            </p>
+          </div>
 
-      <p>
-        <Link href="/affiliate-disclosure">
-          Read our full affiliate disclosure
-        </Link>
-      </p>
-    </article>
+        </div>
+      </section>
+
+
+      {/* =========================
+          FEATURES
+      ========================== */}
+
+      <section className="review-content-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            04 · MAIN FEATURES
+          </div>
+
+          <h2 className="review-section-title">
+            The features that
+            <span> actually matter.</span>
+          </h2>
+
+          <div className="review-feature-grid">
+            {features.map((feature) => (
+              <article className="review-feature-card" key={feature.number}>
+                <span className="review-feature-number">
+                  {feature.number}
+                </span>
+
+                <h3>{feature.title}</h3>
+
+                <p>{feature.text}</p>
+              </article>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          WHO IT IS FOR
+      ========================== */}
+
+      <section className="review-content-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            05 · WHO SHOULD USE IT
+          </div>
+
+          <h2 className="review-section-title">
+            A good fit for some.
+            <span> Not everyone.</span>
+          </h2>
+
+          <div className="fit-grid">
+
+            <div className="fit-card fit-positive">
+              <span>GOOD FIT</span>
+
+              <h3>You should consider Writesonic if...</h3>
+
+              <ul>
+                <li>You publish content consistently.</li>
+                <li>You actively invest in SEO.</li>
+                <li>You care about visibility inside AI search.</li>
+                <li>You manage content across a team or agency.</li>
+                <li>
+                  You prefer several marketing workflows inside one platform.
+                </li>
+              </ul>
+            </div>
+
+            <div className="fit-card fit-negative">
+              <span>PROBABLY SKIP</span>
+
+              <h3>Look elsewhere if...</h3>
+
+              <ul>
+                <li>You only generate AI text occasionally.</li>
+                <li>You do not actively work on SEO.</li>
+                <li>You want the cheapest possible writing assistant.</li>
+                <li>
+                  Your workflow does not require AI visibility monitoring.
+                </li>
+                <li>You prefer a very simple interface with fewer tools.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          PRICING
+      ========================== */}
+
+      <section className="review-content-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            06 · PRICING
+          </div>
+
+          <div className="pricing-review-panel">
+
+            <div className="pricing-review-copy">
+              <h2>
+                Starts around
+                <span> $99/month.</span>
+              </h2>
+
+              <p>
+                At the time of this review, Writesonic lists Starter at
+                $99/month, or $79/month when billed annually.
+              </p>
+
+              <p>
+                Higher tiers increase substantially as AI visibility,
+                workflow and usage requirements grow.
+              </p>
+
+              <p className="pricing-note">
+                Software pricing changes frequently. Verify current pricing
+                and plan limits directly with Writesonic before purchasing.
+              </p>
+            </div>
+
+            <div className="pricing-number-card">
+              <span>STARTER</span>
+
+              <strong>$99</strong>
+
+              <small>monthly pricing</small>
+
+              <div className="pricing-divider" />
+
+              <strong className="pricing-annual">$79</strong>
+
+              <small>per month, billed annually</small>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          VALUE ANALYSIS
+      ========================== */}
+
+      <section className="review-content-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            07 · VALUE
+          </div>
+
+          <h2 className="review-section-title">
+            The real question:
+            <span> will you use it?</span>
+          </h2>
+
+          <div className="review-reading-copy">
+            <p>
+              Evaluating Writesonic purely by the number of features misses
+              the point.
+            </p>
+
+            <p>
+              A marketing or SEO team that regularly researches topics,
+              publishes content, optimizes existing pages and monitors AI
+              search visibility may be able to consolidate several workflows
+              into one platform.
+            </p>
+
+            <p>
+              For that user, the price can make more sense.
+            </p>
+
+            <p>
+              Someone who opens an AI writing tool twice a month to generate a
+              caption or rewrite a paragraph has a completely different
+              equation. Most of Writesonic&apos;s broader platform would go
+              unused.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          TESTING DISCLOSURE
+      ========================== */}
+
+      <section className="review-content-section">
+        <div className="review-article-container">
+
+          <div className="editorial-disclosure-card">
+            <span>EDITORIAL NOTE</span>
+
+            <h3>What this review is — and is not.</h3>
+
+            <p>
+              This version of the Softlixo review is an independent analysis
+              of Writesonic&apos;s current product positioning, documented
+              capabilities and pricing.
+            </p>
+
+            <p>
+              We are not presenting fabricated long-term hands-on testing or
+              invented performance results. As additional direct testing is
+              completed, this review can be updated with workflow-level
+              observations.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          FINAL VERDICT
+      ========================== */}
+
+      <section className="review-final-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            08 · FINAL VERDICT
+          </div>
+
+          <div className="final-verdict-panel">
+
+            <h2>
+              Writesonic is worth considering
+              <span> when content is serious work.</span>
+            </h2>
+
+            <p>
+              Writesonic makes considerably more sense for marketers, SEO
+              professionals, agencies and businesses than it does for casual
+              AI users.
+            </p>
+
+            <p>
+              Its biggest advantage is not any single writing feature. It is
+              the attempt to connect AI search visibility, SEO intelligence
+              and content execution inside one workflow.
+            </p>
+
+            <div className="final-score-row">
+              <div>
+                <span>SOFTLIXO SCORE</span>
+                <strong>4.3 / 5</strong>
+              </div>
+
+              <div>
+                <span>BEST FOR</span>
+                <strong>Marketing & SEO teams</strong>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          FAQ
+      ========================== */}
+
+      <section className="review-content-section review-faq-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            09 · FAQ
+          </div>
+
+          <h2 className="review-section-title">
+            Before you
+            <span> decide.</span>
+          </h2>
+
+          <div className="review-faq-list">
+            {faqs.map((faq, index) => (
+              <div className="review-faq-item" key={faq.question}>
+                <span>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <div>
+                  <h3>{faq.question}</h3>
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =========================
+          CTA
+      ========================== */}
+
+      <section className="review-cta-section">
+        <div className="review-cta-glow" />
+
+        <div className="review-article-container">
+          <div className="review-cta-card">
+
+            <span className="review-section-kicker">
+              EXPLORE WRITESONIC
+            </span>
+
+            <h2>
+              Decide based on
+              <span> your workflow.</span>
+            </h2>
+
+            <p>
+              If AI search visibility, SEO and regular content production are
+              meaningful parts of your marketing strategy, Writesonic is
+              worth evaluating.
+            </p>
+
+            <a
+              href="https://writesonic.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button primary review-cta-button"
+            >
+              Visit Writesonic
+              <span>↗</span>
+            </a>
+
+            <p className="affiliate-placeholder">
+              Softlixo may add an affiliate relationship to this page in the
+              future. Any commercial relationship will be clearly disclosed.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+
+      {/* =========================
+          SOURCES
+      ========================== */}
+
+      <section className="review-sources-section">
+        <div className="review-article-container">
+
+          <div className="review-section-kicker">
+            SOURCES
+          </div>
+
+          <div className="review-sources-list">
+            <a
+              href="https://writesonic.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Writesonic — Official website ↗
+            </a>
+
+            <a
+              href="https://writesonic.com/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Writesonic — Official pricing ↗
+            </a>
+
+            <a
+              href="https://writesonic.com/seo-ai-agent"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Writesonic — SEO AI Agent ↗
+            </a>
+
+            <a
+              href="https://writesonic.com/ai-article-writer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Writesonic — AI Article Writer ↗
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
   );
 }
