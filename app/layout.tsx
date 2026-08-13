@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import MobileNav from "./MobileNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -44,7 +45,8 @@ export default function RootLayout({
         </Script>
 
         <header>
-          <div className="nav">
+          {/* Desktop navigation */}
+          <div className="nav desktop-nav">
             <Link href="/" className="brand">
               softlixo
             </Link>
@@ -56,9 +58,12 @@ export default function RootLayout({
               <Link href="/contact">Contact</Link>
             </nav>
           </div>
+
+          {/* Mobile navigation */}
+          <MobileNav />
         </header>
 
-        <main>{children}</main>
+        {children}
 
         <footer>
           <div className="footer-inner">
@@ -66,7 +71,9 @@ export default function RootLayout({
 
             <nav>
               <Link href="/privacy">Privacy</Link>
-              <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
+              <Link href="/affiliate-disclosure">
+                Affiliate Disclosure
+              </Link>
               <Link href="/contact">Contact</Link>
             </nav>
           </div>
