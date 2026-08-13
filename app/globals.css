@@ -4963,3 +4963,386 @@ footer {
     left: 4% !important;
   }
 }
+/* =========================================================
+   SOFTLIXO — PREMIUM MOBILE NAV
+========================================================= */
+
+/* Desktop 默认隐藏 mobile nav */
+.mobile-nav,
+.mobile-menu-panel {
+  display: none;
+}
+
+@media (max-width: 760px) {
+
+  /* 隐藏原本 desktop navigation */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  header {
+    position: relative;
+    z-index: 1000;
+
+    background: rgba(5, 16, 29, 0.94);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+  }
+
+  /* =========================
+     TOP BAR
+  ========================== */
+
+  .mobile-nav {
+    position: relative;
+    z-index: 1002;
+
+    width: 100%;
+    min-height: 92px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-brand {
+    position: relative;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -0.055em;
+
+    text-decoration: none;
+  }
+
+  .mobile-brand::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: -13px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 999px;
+
+    background: #71f0c8;
+
+    box-shadow:
+      0 0 14px rgba(113, 240, 200, 0.75);
+  }
+
+
+  /* =========================
+     MENU BUTTON
+  ========================== */
+
+  .mobile-menu-button {
+    appearance: none;
+    border: 1px solid rgba(255,255,255,0.12);
+
+    min-width: 92px;
+    height: 42px;
+
+    padding: 0 14px 0 16px;
+
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,255,255,0.09),
+        rgba(255,255,255,0.035)
+      );
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+
+    box-shadow:
+      inset 0 1px rgba(255,255,255,0.08),
+      0 8px 30px rgba(0,0,0,0.16);
+
+    cursor: pointer;
+
+    transition:
+      border-color 0.28s ease,
+      background 0.28s ease,
+      transform 0.28s ease;
+  }
+
+  .mobile-menu-button:active {
+    transform: scale(0.96);
+  }
+
+  .mobile-menu-button.is-open {
+    border-color: rgba(113,240,200,0.35);
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(113,240,200,0.13),
+        rgba(155,188,255,0.07)
+      );
+  }
+
+  .mobile-menu-icon {
+    width: 17px;
+    height: 12px;
+
+    position: relative;
+  }
+
+  .mobile-menu-icon i {
+    position: absolute;
+    left: 0;
+
+    width: 17px;
+    height: 1.5px;
+
+    border-radius: 999px;
+
+    background: #71f0c8;
+
+    transition:
+      top 0.28s ease,
+      transform 0.28s ease;
+  }
+
+  .mobile-menu-icon i:first-child {
+    top: 2px;
+  }
+
+  .mobile-menu-icon i:last-child {
+    top: 9px;
+  }
+
+  .mobile-menu-button.is-open .mobile-menu-icon i:first-child {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+
+  .mobile-menu-button.is-open .mobile-menu-icon i:last-child {
+    top: 5px;
+    transform: rotate(-45deg);
+  }
+
+
+  /* =========================
+     GLASS MENU PANEL
+  ========================== */
+
+  .mobile-menu-panel {
+    position: absolute;
+    top: 91px;
+    left: 0;
+    right: 0;
+
+    z-index: 1001;
+
+    width: 100%;
+
+    padding: 18px 20px 26px;
+
+    display: block;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(6, 18, 32, 0.985),
+        rgba(7, 21, 37, 0.975)
+      );
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(113,240,200,0.12);
+
+    box-shadow:
+      0 35px 70px rgba(0,0,0,0.38);
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+      translateY(-14px)
+      scale(0.985);
+
+    transform-origin: top center;
+
+    pointer-events: none;
+
+    transition:
+      opacity 0.32s ease,
+      transform 0.42s cubic-bezier(.2,.8,.2,1),
+      visibility 0.32s ease;
+  }
+
+  .mobile-menu-panel.is-open {
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+      translateY(0)
+      scale(1);
+
+    pointer-events: auto;
+  }
+
+
+  /* =========================
+     DECORATIVE GLOW
+  ========================== */
+
+  .mobile-menu-glow {
+    position: absolute;
+
+    width: 210px;
+    height: 210px;
+
+    border-radius: 50%;
+
+    filter: blur(55px);
+
+    pointer-events: none;
+  }
+
+  .mobile-menu-glow-a {
+    top: -110px;
+    right: -60px;
+
+    background: rgba(113,240,200,0.12);
+  }
+
+  .mobile-menu-glow-b {
+    bottom: -130px;
+    left: -70px;
+
+    background: rgba(155,188,255,0.10);
+  }
+
+
+  /* =========================
+     MENU LINKS
+  ========================== */
+
+  .mobile-menu-links {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+  }
+
+  .mobile-menu-links a {
+    min-height: 76px;
+
+    padding: 0 4px;
+
+    display: grid;
+    grid-template-columns: 35px 1fr auto;
+    align-items: center;
+    gap: 12px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.075);
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition:
+      padding-left 0.26s ease,
+      background 0.26s ease;
+  }
+
+  .mobile-menu-links a:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-menu-links a span {
+    color: rgba(255,255,255,0.32);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .mobile-menu-links a strong {
+    color: #f7f9fc;
+
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+
+  .mobile-menu-links a i {
+    color: #71f0c8;
+
+    font-size: 19px;
+    font-style: normal;
+
+    transition:
+      transform 0.25s ease;
+  }
+
+  .mobile-menu-links a:active {
+    padding-left: 10px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(113,240,200,0.045),
+        transparent
+      );
+  }
+
+  .mobile-menu-links a:active i {
+    transform: translate(3px,-3px);
+  }
+
+
+  /* =========================
+     MENU FOOTER
+  ========================== */
+
+  .mobile-menu-footer {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 16px;
+    padding: 18px 4px 2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .mobile-menu-footer span {
+    color: #7f91a8;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu-footer strong {
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 750;
+  }
+}
